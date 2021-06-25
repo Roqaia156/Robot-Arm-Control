@@ -1,0 +1,70 @@
+<DOCTYPE html!>
+<html>
+<head>
+<title>SmartMethodRA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { 
+background-image: url('https://5zznly.com/p/2021/06/fFOfL_Robot_(2).png');
+background-repeat: no-repeat ;
+background-attachment : fixed;
+background-size:cover; }
+h1 { font-family : verdana ; 
+color:whitesmoke ; 
+font-size: 440%;
+text-align: center; }
+button{
+  height:30px ;
+   width:130px;
+     top:10% ;
+     left:50% ; }
+ 
+</style>
+
+</head>
+<body>
+<h1 >Robot Arm Control </h1>
+
+<form id="submit" style="text-align: center" action="/connection.php" method="POST"
+ oninput="a.value=parseInt(eng1.value) ;b.value=parseInt(eng2.value) ; c.value=parseInt(eng3.value); d.value=parseInt(eng4.value) ;
+  e.value=parseInt(eng5.value) ; f.value=parseInt(eng6.value) ;" >
+<label for="eng1" style="color: rgb(240, 226, 199);"> engine 1 :</label>
+<input type="range" id="eng1" min="0" max="180" >
+<output name="a" for="eng1"style="color: rgb(233, 4, 130);"></output>
+<br><br>
+<label for="eng2"  style="color: rgb(240, 226, 199);">engine 2 :</label>
+<input type="range" id="eng2" min="0" max="180" >
+<output name="b" for="eng2"style="color: rgb(233, 4, 130);"></output>
+<br><br>
+<label for="eng3" style="color: rgb(240, 226, 199);"> engine 3 :</label>
+<input type="range" id="eng3" min="0" max="180" >
+<output name="c" for="eng3" style="color: rgb(233, 4, 130);"></output>
+<br><br>
+<label for="eng4" style="color: rgb(240, 226, 199);" > engine 4 :</label>
+<input type="range" id="eng4" min="0" max="180">
+<output name="d" for="eng4"style="color: rgb(233, 4, 130);"></output>
+<br><br>
+<label for="eng5" style="color: rgb(240, 226, 199);"> engine 5 :</label>
+<input type="range" id="eng5" min="0" max="180">
+<output name="e" for="eng5"style="color: rgb(233, 4, 130);"></output>
+<br><br>
+<label for="eng6" style="color: rgb(240, 226, 199);" > engine6 :</label>
+<input type="range" id="eng6" min="0" max="180">
+<output name="f" for="eng6"style="color: rgb(233, 4, 130);"></output>
+<br> <br>
+<input type="button" onclick="myFunction()" value="Submit">
+
+
+
+</form>
+
+<script>
+  function myFunction() {
+  document.getElementById("submit").submit(); }
+</script>
+
+
+</body>
+</html>
+
+
